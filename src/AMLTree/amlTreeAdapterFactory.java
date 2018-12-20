@@ -39,8 +39,7 @@ System.out.println(objectToAdapt.getClass()+ " Klasse geAtdapter "+ objectToAdap
 		if (objectToAdapt instanceof InternalElementType) {
 			
 //			<SupportedRoleClass RefRoleClassPath="Graphenlib/Knoten" />
-			if(((InternalElementType) objectToAdapt).getSupportedRoleClass().get(0).getRefRoleClassPath().equals("Graphenlib/Knoten")) 
-				System.out.println("toll");
+			
 			System.out.println("erster teil: " + ((InternalElementType) objectToAdapt).getSupportedRoleClass().get(0).getRefRoleClassPath());
 			
 			return new InternalElementTreeAdapter((InternalElementType) objectToAdapt);
